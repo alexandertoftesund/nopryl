@@ -1,0 +1,136 @@
+
+:root {
+    --main-background-color: rgb(6, 30, 44);
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    min-width: 800px;
+    min-height: 600px;
+}
+
+header {
+    width: 100%;
+}
+
+.sticky-menu {
+    background-color: var(--main-background-color);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-menu li {
+    margin: 0 15px;
+}
+
+.sticky-menu a {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    padding: 2rem 0.5rem 2rem 0.5rem;
+    display: block;
+}
+
+.sticky-menu a:hover {
+    text-decoration: underline;
+}
+
+#menuLogo {
+    margin: 0.5rem 0 0 0;
+    width: 5rem;
+}
+
+main {
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 8rem;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.section-title {
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+    color: white;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.section-subtitle {
+    margin: 0;
+    font-size: 1.15rem;
+    color: rgb(110, 189, 236);
+    font-style: italic;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.section-subtext {
+    margin: 10rem 0rem 0rem 0rem;
+    text-align: center;
+}
+
+#home {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01)),
+        url("../img/lambs1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#about {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01)),
+        url("../img/lambs2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#join {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01)),
+        url("../img/lambs3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#discord {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01)),
+        url("../img/lambs4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#discordLogo {
+    margin: 10rem;
+    filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 1));
+}
+
+a {
+    color: coral;
+}
