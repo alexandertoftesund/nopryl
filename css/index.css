@@ -11,6 +11,10 @@ body {
     min-height: 600px;
 }
 
+a {
+    color: hotpink;
+}
+
 header {
     width: 100%;
 }
@@ -110,9 +114,9 @@ section {
 .section-content {
     display: flex;
     flex-direction: column;
-    margin: 7rem 0 0 0;
-    width: 50%;
-    background-color: rgba(6, 30, 44, 0.3);
+    margin: 15rem 0 0 0;
+    width: 30%;
+    background-color: rgba(6, 30, 44, 0.5);
     border: 1px dotted var(--main-background-color);
 }
 
@@ -152,8 +156,4 @@ section {
     margin: 10rem;
     filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 1));
 
-}
-
-a {
-    color: coral;
 }
