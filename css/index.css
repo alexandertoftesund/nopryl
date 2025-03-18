@@ -1,6 +1,7 @@
 
 :root {
     --main-background-color: rgb(6, 30, 44);
+    --main-highlight-color: rgb(14, 47, 67);
 }
 
 body {
@@ -48,7 +49,17 @@ header {
 }
 
 .sticky-menu a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    background-color: var(--main-highlight-color);
+}
+
+#menuLogoA {
+    margin: 0;
+    padding: 0;
+}
+
+#menuLogoA:hover {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #menuLogo {
@@ -63,6 +74,7 @@ main {
 }
 
 section {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -90,8 +102,18 @@ section {
 }
 
 .section-subtext {
-    margin: 10rem 0rem 0rem 0rem;
-    text-align: center;
+    margin: 1rem;
+    padding: 0;
+    text-align: left;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 0 0 0;
+    width: 50%;
+    background-color: rgba(6, 30, 44, 0.3);
+    border: 1px dotted var(--main-background-color);
 }
 
 #home {
@@ -129,6 +151,7 @@ section {
 #discordLogo {
     margin: 10rem;
     filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 1));
+
 }
 
 a {
