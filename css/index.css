@@ -1,14 +1,18 @@
 
 :root {
-    --main-background-color: rgb(6, 30, 44);
-    --main-highlight-color: rgb(14, 47, 67);
+    --main-background-color: rgb(11, 42, 75);
+    --main-background-color-a: rgba(11, 42, 75, 0.9);
+    --main-highlight-color: rgb(17, 72, 105);
+    --main-font-color: rgb(215, 215, 215);
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    min-width: 800px;
-    min-height: 600px;
+    background-color: var(--main-background-color);
 }
 
 a {
@@ -16,19 +20,18 @@ a {
 }
 
 header {
-    width: 100%;
-}
-
-.sticky-menu {
-    background-color: var(--main-background-color);
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--main-background-color);
+}
+
+.sticky-menu {
+
 }
 
 .sticky-menu ul {
@@ -41,19 +44,18 @@ header {
 }
 
 .sticky-menu li {
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 .sticky-menu a {
-    font-size: 1.4rem;
-    color: white;
+    font-size: 1.3rem;
+    color: var(--main-font-color);
     text-decoration: none;
     padding: 2rem 0.5rem 2rem 0.5rem;
     display: block;
 }
 
 .sticky-menu a:hover {
-    /* text-decoration: underline; */
     background-color: var(--main-highlight-color);
 }
 
@@ -72,60 +74,74 @@ header {
 }
 
 main {
-    font-size: 1.4rem;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: var(--main-font-color);
     text-shadow: 1px 1px 1px black;
+    overflow: hidden;
 }
 
 section {
-    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     flex-direction: column;
-    padding: 8rem;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.section-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     width: 100%;
-    min-height: 100vh;
-    box-sizing: border-box;
+    background-color: var(--main-background-color-a);
+    overflow: hidden;
+    /* border: 0.1rem solid rgba(255, 168, 80, 0.5); */
 }
 
 .section-title {
-    padding: 0;
+    align-self: flex-start;
     margin: 0;
-    font-size: 4rem;
-    color: white;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    font-size: 2.5rem;
+    color: rgb(255, 168, 80);
 }
 
-.section-subtitle {
-    margin: 0;
-    font-size: 1.15rem;
-    color: rgb(110, 189, 236);
+#sectionSubTitle {
+    align-self: center;
     font-style: italic;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+    font-size: 1.1rem;
+    color: var(--main-font-color)
+}
+
+#mainSectionTitle {
+    font-size: 5rem;
+    align-self: center;
+}
+
+.section-text-box {
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30%;
 }
 
 .section-subtext {
-    margin: 1rem;
-    padding: 0;
-    text-align: left;
-}
-
-.section-content {
-    display: flex;
-    flex-direction: column;
-    margin: 15rem 0 0 0;
-    width: 30%;
-    background-color: rgba(6, 30, 44, 0.5);
-    border: 1px dotted var(--main-background-color);
+    margin: 1rem 0 0 0;
+    font-size: 1.1rem;
 }
 
 #home {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01)),
         url("../img/lambs1.jpg");
-    background-position: center;
     background-size: cover;
+    background-position: center;
 }
 
 #about {
@@ -150,10 +166,4 @@ section {
         url("../img/lambs4.jpg");
     background-position: center;
     background-size: cover;
-}
-
-#discordLogo {
-    margin: 10rem;
-    filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 1));
-
 }
