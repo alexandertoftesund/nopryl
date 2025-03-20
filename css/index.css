@@ -5,8 +5,8 @@
     --main-background-color-b: rgba(235, 235, 235, 0.5);
     --section-background-color: rgb(215, 215, 215);
     --main-highlight-color: rgb(215, 215, 215);
-    --main-font-color: rgb(20, 20, 20);
-    --main-font-color-a: rgb(70, 70, 70);
+    --main-font-color: rgb(10, 10, 10);
+    --main-font-color-a: rgb(30, 30, 30);
 }
 
 body {
@@ -58,11 +58,11 @@ header {
 }
 
 .sticky-menu a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--main-font-color);
     text-decoration: none;
-    padding: 0.85rem;
-    margin: 0.25rem;
+    padding: 0.8rem;
+    margin: 0.2rem;
 }
 
 .sticky-menu a:hover {
@@ -150,9 +150,15 @@ section {
     min-height: 30%;
 }
 
+.section-text-box ul {
+    color: var(--main-font-color-a);
+    font-size: 1.2rem;
+}
+
+
 .section-subtext {
     margin: 1rem 0 0 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--main-font-color-a);
 }
 
