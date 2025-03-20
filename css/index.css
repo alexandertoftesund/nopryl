@@ -119,14 +119,16 @@ section {
     padding: 0;
     font-size: 3rem;
     color: var(--main-font-color);
+    white-space: nowrap;
 }
 
 #sectionSubTitle {
     margin: 0;
     padding: 0;
     font-style: italic;
-    font-size: 0.98rem;
+    font-size: 1.1rem;
     color: rgb(155, 0, 0);
+    white-space: nowrap;
 }
 
 #mainSectionTitle {
@@ -135,6 +137,7 @@ section {
     color: var(--main-font-color);
     font-size: 6rem;
     align-self: center;
+    white-space: nowrap;
 }
 
 .section-text-box {
