@@ -61,7 +61,8 @@ header {
     font-size: 1.1rem;
     color: var(--main-font-color);
     text-decoration: none;
-    margin: 1.1rem;
+    padding: 0.85rem;
+    margin: 0.25rem;
 }
 
 .sticky-menu a:hover {
