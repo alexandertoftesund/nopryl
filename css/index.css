@@ -1,103 +1,107 @@
-
 :root {
     --main-background-color: rgb(235, 235, 235);
-    --main-background-color-a: rgba(235, 235, 235, 0.9);
-    --main-background-color-b: rgba(235, 235, 235, 0.5);
-    --section-background-color: rgb(215, 215, 215);
+    --alt-background-color-1: rgb(200, 200, 200);
+    --alt-background-color-2: rgb(220, 220, 220);
+    --menu-color: rgb(235, 235, 235);
     --main-highlight-color: rgb(215, 215, 215);
-    --main-font-color: rgb(10, 10, 10);
-    --main-font-color-a: rgb(30, 30, 30);
+    --main-font-color: rgb(25, 25, 25);
+    --main-font-color-a: rgb(70, 70, 70);
+    --red-highlight-color: rgb(155, 0, 0);
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--main-background-color);
+html, body {
     box-sizing: border-box;
+    background-color: var(--main-background-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 a {
-    color: rgb(155, 0, 0);
+    color: var(--red-highlight-color);
 }
 
-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+.container > div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-background-color);
-    overflow: hidden;
-    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4em auto 4em;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+
+.header {
+    grid-area: h;
+    background-color: var(--menu-color);
+    position: sticky;
+    top: 0;
 }
 
 .sticky-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3.5rem;
+    height: 100%;
+    width: 100%;
 }
 
 .sticky-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .sticky-menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
+    padding: 0 0.75em;
 }
 
 .sticky-menu a {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     color: var(--main-font-color);
     text-decoration: none;
-    padding: 0.8rem;
-    margin: 0.2rem;
-}
-
-.sticky-menu a:hover {
-    background-color: var(--main-highlight-color);
-}
-
-#menuLogoA {
-    margin: 0;
     padding: 0;
-}
-
-#menuLogoA:hover {
-    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
 }
 
 #menuLogo {
-    margin: 0.3rem 0 0 0;
-    width: 3.4rem;
+    width: 3em;
 }
 
-main {
+#menuLogoA {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: var(--main-font-color);
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    grid-area: c;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 99%;
-    height: 60rem;
+    width: 100%;
+    height: 60em;
 }
 
 .section-div {
@@ -110,48 +114,42 @@ section {
 }
 
 #mainSectionDiv {
-    margin: -15rem 0 0 0;
+    margin: 11em 0 0 0;
 }
 
-.separator-div {
-    width: 100%;
-    height: 1rem;
-    background-color: var(--main-background-color);
-}
-
-.section-title {
-    align-self: flex-start;
-    margin: 0;
+#mainSectionTextBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 0;
-    font-size: 3rem;
-    color: var(--main-font-color);
-
-}
-
-#sectionSubTitle {
-    margin: 0;
-    padding: 0;
-    font-style: italic;
-    font-size: 1.2rem;
-    color: rgb(155, 0, 0);
-    /* white-space: nowrap; */
 }
 
 #mainSectionTitle {
-    padding: 0;
-    margin: 0;
-    color: var(--main-font-color);
-    font-size: 6rem;
-    align-self: center;
+    text-align: center;
+    font-size: 6em;
+    color: var(--main-font-color-a);
+}
 
+.section-title {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: var(--main-font-color-a);
+}
+
+#sectionSubTitle {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-size: 0.85em;
+    color: var(--red-highlight-color);
 }
 
 .section-text-box {
-    margin: 3rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height: 30%;
+    margin: 0;
+    padding: 0 0 0 1em;
 }
 
 .section-text-box ul {
@@ -159,43 +157,41 @@ section {
     font-size: 1.2rem;
 }
 
-
 .section-subtext {
-    margin: 1rem 0 0 0;
+    margin: 0;
     font-size: 1.2rem;
     color: var(--main-font-color-a);
 }
 
 #home {
-    background-color: var(--section-background-color);
+    background-color: var(--main-background-color);
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
         url("../img/lambs1.jpg");
     background-size: cover;
     background-position: center;
 }
 
+#imageGrid {
+
+}
+
 #about {
-    background-color: var(--section-background-color);
+    display: flex;
+    background-color: var(--alt-background-color-1);
 }
 
 #join {
-    background-color: var(--section-background-color);
+    display: flex;
+    background-color: var(--alt-background-color-2);
 }
 
 #discord {
-    background-color: var(--section-background-color);
-}
-
-footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    height: 20rem;
-    background-color: var(--section-background-color);
+    background-color: var(--alt-background-color-1);
 }
 
-footer p {
-    margin: 0;
+.footer {
+    grid-area: f;
+    background-color: rgb(35, 35, 35);
+    color: var(--main-font-color-a)
 }
