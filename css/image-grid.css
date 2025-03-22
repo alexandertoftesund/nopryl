@@ -3,7 +3,7 @@
     height: auto;
     width: auto;
     gap: 0.2em;
-    margin: 1em 0;
+    margin: 2em 0;
     grid-template-columns: repeat(4, 22vw);
     grid-template-rows: repeat(4, 12vw);
 }
