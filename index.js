@@ -1,12 +1,12 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     const images = [
-        "../img/lambs1.jpg",
-        "../img/lambs4.jpg",
-        "../img/lambs5.jpg",
-        "../img/lambs7.jpg",
-        "../img/lambs10.png",
-        "../img/lambs11.jpg"
+        "img/lambs1.jpg",
+        "img/lambs4.jpg",
+        "img/lambs5.jpg",
+        "img/lambs7.jpg",
+        "img/lambs10.png",
+        "img/lambs11.jpg"
     ];
 
     const randomImage = images[Math.floor(Math.random() * images.length)];
