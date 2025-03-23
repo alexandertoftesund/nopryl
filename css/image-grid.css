@@ -15,7 +15,7 @@
 }
 
 #imageGrid div {
-    border: 1px solid rgba(0, 0, 0, 0.85);
+    border: 1px solid var(--main-font-color-a);
     box-sizing: border-box;
 }
 
