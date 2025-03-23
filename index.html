@@ -6,6 +6,7 @@
     <link rel="icon" href="img/nopryl-small.png">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/image-grid.css">
+    <script src="index.js" defer></script>
     <title>Nopryl of Norway</title>
 </head>
 <body>
@@ -53,6 +54,7 @@
                 <div class="image-grid-div"><a href="img/lambs11.jpg"><img src="img/lambs11.jpg" alt=""></a></div>
                 <div class="image-grid-div"><a href="img/lambs12.jpg"><img src="img/lambs12.jpg" alt=""></a></div>
             </section>
+            <div class="section-divider"></div>
             <section id="about">
                 <div class="section-div">
                     <div class="section-text-box">
@@ -70,6 +72,7 @@
                     </div>
                 </div>
             </section>
+            <div class="section-divider"></div>
             <section id="join">
                 <div class="section-div">
                     <div class="section-text-box">
@@ -101,44 +104,11 @@
                     </div>
                 </div>
             </section>
+            <div class="section-divider"></div>
         </div>
         <div class="footer">
             <p>2025 © Alex2k</p>
         </div>
     </div>
-    <script>
-        document.querySelectorAll('.scroll-link-top').forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    const offsetAboveMiddle = 1000;
-                    const targetPosition = targetElement.offsetTop + (targetElement.offsetHeight / 2) - (window.innerHeight / 2) - offsetAboveMiddle;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        document.querySelectorAll('.scroll-link').forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    const targetPosition = targetElement.offsetTop + (targetElement.offsetHeight / 2) - (window.innerHeight / 2);
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
