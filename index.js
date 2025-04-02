@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     homeElement.style.backgroundImage = `${gradient}, url(${randomImage})`;
 });
 
-document.querySelectorAll('.scroll-link, .scroll-link-top').forEach(link => {
+document.querySelectorAll('.scroll-link-top, .scroll-link-media').forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
@@ -30,8 +30,7 @@ document.querySelectorAll('.scroll-link, .scroll-link-top').forEach(link => {
                 targetPosition = targetElement.offsetTop + (targetElement.offsetHeight / 2) - (window.innerHeight / 2);
             }
             window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
+                top: targetPosition
             });
         }
     });
