@@ -15,6 +15,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -51,6 +52,7 @@ a:hover {
     position: sticky;
     top: 0;
     overflow: hidden;
+    z-index: 9999;
 }
 
 .sticky-menu {
@@ -161,7 +163,7 @@ section {
     text-align: center;
     margin: 0;
     padding: 0;
-    font-size: 0.84em;
+    font-size: 0.73em;
     font-weight: 600;
     color: var(--red-highlight-color);
 }

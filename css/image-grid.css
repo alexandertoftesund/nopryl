@@ -2,10 +2,10 @@
     display: grid;
     height: auto;
     width: auto;
-    gap: 0.2em;
-    margin: 2em 0;
-    grid-template-columns: repeat(4, 22vw);
-    grid-template-rows: repeat(4, 12vw);
+    gap: 0.5em;
+    margin: 1em 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 #imageGrid img {
@@ -15,8 +15,7 @@
 }
 
 #imageGrid div {
-    border: 1px solid var(--main-font-color-a);
-    box-sizing: border-box;
+    border: 0.1em solid black;
 }
 
 .image-grid-div-big {
