@@ -2,9 +2,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     const images = [
         "img/lambs1.webp",
-        "img/lambs4.webp",
-        "img/lambs5.webp",
+        "img/lambs3.webp",
+        "img/lambs6.webp",
         "img/lambs7.webp",
+        "img/lambs9.webp",
         "img/lambs10.webp",
         "img/lambs11.webp"
     ];
