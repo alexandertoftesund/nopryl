@@ -36,3 +36,18 @@ document.querySelectorAll('.scroll-link-top, .scroll-link-media').forEach(link =
         }
     });
 });
+
+document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const targetPosition = targetElement.offsetTop;
+            window.scrollTo({
+                top: targetPosition
+            });
+        }
+    });
+});
