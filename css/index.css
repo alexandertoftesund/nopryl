@@ -40,7 +40,7 @@ a:active {
     display: grid;
     height: 100%;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 4em auto 4em;
+    grid-template-rows: 4em auto 3em;
     grid-template-areas:
         "h h h h h h h h h h h h"
         "c c c c c c c c c c c c"
@@ -93,9 +93,6 @@ a:active {
 
 .sticky-menu a:hover {
     color: var(--red-highlight-color);
-/*     text-decoration: underline;
-    text-decoration-thickness: 0.1em;
-    text-decoration-color: var(--red-highlight-color); */
 }
 
 #menuLogo {
@@ -131,7 +128,7 @@ section {
 }
 
 .section-divider {
-    height: 1em;
+    height: 0.5em;
     width: 100%;
     background-color: var(--alt-background-color);
 }
