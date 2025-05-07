@@ -40,7 +40,7 @@ a:active {
     display: grid;
     height: 100%;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 4em auto 3em;
+    grid-template-rows: 4rem auto 3rem;
     grid-template-areas:
         "h h h h h h h h h h h h"
         "c c c c c c c c c c c c"
@@ -80,11 +80,12 @@ a:active {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0 0.7em;
+    padding: 0 0.65rem;
 }
 
 .sticky-menu a {
-    font-size: 1.2em;
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--main-font-color);
     text-decoration: none;
     padding: 0;
@@ -96,7 +97,7 @@ a:active {
 }
 
 #menuLogo {
-    width: 3.2em;
+    width: 3.9rem;
     filter: drop-shadow(0px -2px 2px rgba(0, 0, 0, 0.75));
 }
 
@@ -114,7 +115,7 @@ a:active {
 
 section {
     width: 100%;
-    height: 55.5em;
+    height: 55.5rem;
     overflow: hidden;
 }
 
@@ -128,13 +129,13 @@ section {
 }
 
 .section-divider {
-    height: 0.5em;
+    height: 0.5rem;
     width: 100%;
     background-color: var(--alt-background-color);
 }
 
 #mainSectionDiv {
-    margin: 11em 0 0 0;
+    margin: 11rem 0 0 0;
 }
 
 #mainSectionTextBox {
@@ -145,16 +146,27 @@ section {
     padding: 0;
 }
 
-#mainSectionTitle {
-    text-align: center;
-    font-size: 6.8em;
-    color: var(--main-font-color-a);
+#mainSectionTitle1 {
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 900;
+}
+
+#mainSectionTitle2 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-weight: 200;
+}
+.norway {
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
 .section-title {
+    text-align: left;
     margin: 0;
     padding: 0;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     color: var(--main-font-color-a);
 }
 
@@ -162,45 +174,66 @@ section {
     text-align: center;
     margin: 0;
     padding: 0;
-    font-size: 0.73em;
+    font-size: 0.70rem;
     font-weight: 600;
+    font-style: italic;
     color: var(--red-highlight-color);
 }
 
 .section-text-box {
     margin: 0;
-    padding: 0 0 0 1em;
+    padding: 0 0 0 1rem;
 }
 
 .section-text-box ul {
     color: var(--main-font-color-a);
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    list-style-type: disc;
+    margin: 0 0 2.5rem 0;
 }
 
 .section-subtext {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    color: var(--main-font-color-a);
+}
+.r-section-subtext {
+    font-size: 1.15rem;
+    font-style: italic;
     color: var(--main-font-color-a);
 }
 
 #home {
     background-size: cover;
     background-position: center;
-    height: 75.5em;
+    height: 75.5rem;
 }
 
 #about {
     display: flex;
     background-color: var(--main-background-color);
+    border-top: 0.5rem solid var(--alt-background-color);
+    box-sizing: border-box;
 }
 
 #join {
     display: flex;
     background-color: var(--main-background-color);
+    border-top: 0.5rem solid var(--alt-background-color);
+    box-sizing: border-box;
+}
+
+#reviews {
+    display: flex;
+    background-color: var(--main-background-color);
+    border-top: 0.5rem solid var(--alt-background-color);
+    box-sizing: border-box;
 }
 
 .footer {
     grid-area: f;
     background-color: var(--main-background-color);
     color: var(--main-font-color-b);
+    border-top: 0.5rem solid var(--alt-background-color);
+    box-sizing: border-box;
 }
