@@ -127,13 +127,13 @@ section {
     margin: 0;
     width: 100%;
 }
-
+/*
 .section-divider {
     height: 0.5rem;
     width: 100%;
     background-color: var(--alt-background-color);
 }
-
+ */
 #mainSectionDiv {
     margin: 11rem 0 0 0;
 }
@@ -206,6 +206,7 @@ section {
 #home {
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 75.5rem;
 }
 
@@ -222,14 +223,14 @@ section {
     border-top: 0.5rem solid var(--alt-background-color);
     box-sizing: border-box;
 }
-
+/*
 #reviews {
     display: flex;
     background-color: var(--main-background-color);
     border-top: 0.5rem solid var(--alt-background-color);
     box-sizing: border-box;
 }
-
+ */
 .footer {
     grid-area: f;
     background-color: var(--main-background-color);
