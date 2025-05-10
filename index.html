@@ -1,14 +1,10 @@
 <!--
 **************************************************
 * Version: 1.0
-* Date: 11.10.2024
+* Date: 07.05.2025
 * Author: Alexander Toftesund
 * E-mail: alexandertoftesund@gmail.com
 **************************************************
-
--Images and fonts found through google. ¯\_(ツ)_/¯
--AI used to figure out certain solutions or do certain calculations. No copied code. (ai.kristiania.no)
-
 -->
 
 <!DOCTYPE html>
@@ -16,220 +12,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/deathStar.png">
+    <link rel="icon" href="img/nopryl-small.png">
     <link rel="stylesheet" href="css/index.css">
-    <title>Death Star</title>
+    <link rel="stylesheet" href="css/image-grid.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Nopryl of Norway</title>
 </head>
 <body>
-    <div id="mainContainerDiv">
-        <!-- Death Star -->
-        <div class="deathStarDiv">
+    <div class="container">
+        <div class="header">
+            <nav class="sticky-menu">
+                <ul>
+                    <li><a class="scroll-link-top" href="#home">Home</a></li>
+                    <li><a class="scroll-link-media" href="#imageGrid">Media</a></li>
+                    <li>
+                        <a id="menuLogoA" href="https://www.nopryl.no/smfprod/index.php?action=recent" target="_blank">
+                            <img src="img/nopryl-small.png" alt="Nopryl Logo" id="menuLogo">
+                        </a>
+                    </li>
+                    <li><a class="scroll-link" href="#about">About</a></li>
+                    <li><a class="scroll-link" href="#join">Join</a></li>
 
-            <img class="deathStarImg" src="img/deathStar.png" alt="Death Star">
-
-            <!-- Start Button -->
-            <div class="startButtonDiv">
-                <a href="bridge.html">
-                    <h1 id="h1exclude">Start</h1>
-                </a>
-                <!-- Start Button Pop-up -->
-                <div class="startButtonPopUpDiv">
-                    <p id="p1exclude">Enter Death Star</p>
-                </div>
-            </div>
-
-            <!-- Millenium Falcon -->
-            <div class="falconContainerDiv">
-                <div class="falconDiv">
-                    <img class="falconImg" src="img/falcon.png" alt="The Millenium Falcon">
-                </div>
-                <!-- Millenium Falcon Pop-up -->
-                <div class="falconPopUpDiv popUp">
-                    <h1>The Millenium Falcon</h1>
-                    <p>Type: Light Freighter</p>
-                    <p>Length: 34.75m</p>
-                    <p>Cargo capacity: 100 metric tons</p>
-                </div>
-            </div>
-
-            <!-- Star Destroyer #1 -->
-            <div class="starDestroyer1ContainerDiv">
-                <div class="starDestroyer1Div">
-                    <img class="starDestroyer1Img" src="img/stardestroyer.png" alt="A Star Destroyer">
-                    <!-- Laser Cannon 1 -->
-                    <div class="laserCannon1Div">
-                        <div class="greenLaser1Div"></div>
-                    </div>
-                    <!-- Laser Cannon 2 -->
-                    <div class="laserCannon2Div">
-                        <div class="greenLaser2Div"></div>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <section id="home">
+                <div class="section-div" id="mainSectionDiv">
+                    <div class="section-text-box" id="mainSectionTextBox">
+                        <h1 class="section-title" id="mainSectionTitle1">Nopryl</h1>
+                        <h1 class="section-title" id="mainSectionTitle2">of <span class="norway">Norway</span></h1>
+                        <p id="sectionSubTitle">"Never underestimate the power of stupid people in large groups!"</p>
                     </div>
                 </div>
-                <!-- Tie Fighter -->
-                <div class="tieFromDestroyer1Div">
-                    <img class="tieFromDestroyer1Img" src="img/tiefighter.png" alt="A Tie Fighter">
-                    <!-- Tie Fighter Pop-up -->
-                    <div class="tieFromDestroyer1PopUp popUp">
-                        <h1>Tie Fighter</h1>
-                        <p>Type: Starfighter</p>
-                        <p>Length: 7.2m</p>
-                        <p>Crew: 1x Pilot</p>
+            </section>
+            <section id="imageGrid">
+                <div class="image-grid-div"><a href="img/lambs1.webp" data-lightbox="lambs" data-title="Get to tha choppah!"><img src="img/lambs1.webp" loading="lazy" alt=""></a></div>
+                <div class="image-grid-div"><a href="img/lambs2.webp" data-lightbox="lambs" data-title="A little photo session"><img src="img/lambs2.webp" loading="lazy" alt=""></a></div>
+                <div class="image-grid-div"><a href="img/lambs3.webp" data-lightbox="lambs" data-title="Moving over open ground"><img src="img/lambs3.webp" loading="lazy" alt=""></a></div>
+                <div class="image-grid-div"><a href="img/lambs4.webp" data-lightbox="lambs" data-title="Fastrope insertion"><img src="img/lambs4.webp" loading="lazy" alt=""></a></div>
+                <div class="image-grid-div"><a href="img/lambs5.webp" data-lightbox="lambs" data-title="Briefing #1"><img src="img/lambs5.webp" loading="lazy" alt=""></a></div>
+                <div class="image-grid-div-big">
+                    <iframe src="https://www.youtube.com/embed/jnX8PVgw0o8?si=MpjVpgfZboVyTGBx" loading="lazy" title="YouTube video player" style="width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="image-grid-div"><a href="img/lambs6.webp" data-lightbox="lambs" data-title="Winter patrol"><img src="img/lambs6.webp" loading="lazy" alt=""></a></div>
+                <div class="image-grid-div"><a href="img/lambs7.webp" data-lightbox="lambs" data-title="Helicopter through night optics"><img src="img/lambs7.webp" loading="lazy" alt=""></a></div>
+                <div class="image-grid-div"><a href="img/lambs8.webp" data-lightbox="lambs" data-title="Briefing #2"><img src="img/lambs8.webp" loading="lazy" alt=""></a></div>
+                <div class="image-grid-div"><a href="img/lambs9.webp" data-lightbox="lambs" data-title="Carrying wounded comrades"><img src="img/lambs9.webp" loading="lazy" alt=""></a></div>
+                <div class="image-grid-div"><a href="img/lambs10.webp" data-lightbox="lambs" data-title="Norwegian patrol"><img src="img/lambs10.webp" loading="lazy" alt=""></a></div>
+                <div class="image-grid-div"><a href="img/lambs11.webp" data-lightbox="lambs" data-title="Trucking through the woodlands"><img src="img/lambs11.webp" loading="lazy" alt=""></a></div>
+                <div class="image-grid-div"><a href="img/lambs12.webp" data-lightbox="lambs" data-title="Happy holidays!"><img src="img/lambs12.webp" loading="lazy" alt=""></a></div>
+            </section>
+            <section id="about">
+                <div class="section-div">
+                    <div class="section-text-box">
+                        <h1 class="section-title">About</h1>
+                        <p class="section-subtext">
+                            Nopryl of Norway is a gaming community <a href="https://www.nopryl.no/smfprod/index.php?topic=4559.0#msg_54888" target="_blank">established in 2001</a>.<br>
+                            Our main focus is organized cooperative play of the Arma series, however, we also enjoy exploring other games from time to time.<br><br>
+
+                            While we take our gaming seriously, we maintain a casual and welcoming atmosphere.<br>We don't adhere to many strict rules, fostering a community where players can enjoy <a href="https://www.nopryl.no/smfprod/index.php?topic=6185.0#msg_77661" target="_blank">serious play with a relaxed vibe</a>.<br>
+                            Our mentality is all about balancing intense, organized gameplay with a friendly and laid-back environment.<br><br>
+
+                            Join Nopryl and become part of a community that values teamwork, strategy, and the joy of gaming.<br>
+                            Whether you're an experienced Arma player or new to the game, you'll find a supportive and engaging group ready to welcome you.
+                        </p>
                     </div>
                 </div>
-                <!-- Imperial Shuttle -->
-                <div class="shuttleDiv">
-                    <img class="shuttleImg" src="img/shuttle.png" alt="An Imperial shuttle">
-                    <!-- Imperial Shuttle Pop-up -->
-                    <div class="shuttlePopUpDiv popUp">
-                        <h1>Lambda T-4a Shuttle</h1>
-                        <p>Type: Transport</p>
-                        <p>Length: 20m</p>
-                        <p>Crew: x2 Pilot/Copilot</p>
+            </section>
+            <section id="join">
+                <div class="section-div">
+                    <div class="section-text-box">
+                        <h1 class="section-title">Forum</h1>
+                        <p class="section-subtext">
+                            Our forum is where we keep our guides and articles.<br>
+                            It's also where we tend to do most of the planning for our sessions.
+                        </p>
+                        <ul>
+                            <li>
+                                Nopryl forum:
+                                    <a href="https://www.nopryl.no/smfprod/index.php" target="_blank">here</a>
+                            </li>
+                        </ul>
+                        <h1 class="section-title">Mods</h1>
+                        <p class="section-subtext">
+                            We play with mods, quite a few mods!<br>
+                            Arma3Sync is our preferred way to distribute and load our mod repository.<br>
+                            In order to be able to play with us, follow the guide linked below.
+                        </p>
+                        <ul>
+                            <li>
+                                Arma3Sync guide:
+                                    <a href="https://www.nopryl.no/smfprod/index.php?topic=6264.0#msg_78859" target="_blank">here</a>
+                            </li>
+                        </ul>
+                        <h1 class="section-title">Discord</h1>
+                        <p class="section-subtext">
+                            We have a Discord server.<br>
+                            Feel free to join, introduce yourself, and get in on the action!
+                        </p>
+                        <ul>
+                            <li>
+                                LAMBS Discord:
+                                <a href="https://discord.gg/CrAbbq6Btg" target="_blank">here</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Star Destroyer #1 Pop-up -->
-                <div class="starDestroyer1PopUpDiv destroyerPopUpDiv popUp">
-                    <h1>Imperial Star Destroyer</h1>
-                    <p>Type: Battleship</p>
-                    <p>Mass: 40 million tons</p>
-                    <p>Length: 1600m</p>
-                </div>
-            </div>
-
-            <!-- Star Destroyer #2 -->
-            <div class="starDestroyer2ContainerDiv">
-                <div class="starDestroyer2Div">
-                    <img class="starDestroyer2Img" src="img/stardestroyer.png" alt="A Star Destroyer">
-                </div>
-                <!-- Tie Fighter -->
-                <div class="tieFromDestroyer2Div">
-                    <img class="tieFromDestroyer2Img" src="img/tiefighter.png" alt="A Tie Fighter">
-                    <!-- Tie Fighter Pop-up -->
-                    <div class="tieFromDestroyer2PopUp popUp">
-                        <h1>Tie Fighter</h1>
-                        <p>Type: Starfighter</p>
-                        <p>Length: 7.2m</p>
-                        <p>Crew: 1x Pilot</p>
-                    </div>
-                </div>
-                <!-- Star Destroyer #2 Pop-up -->
-                <div class="starDestroyer2PopUpDiv destroyerPopUpDiv popUp">
-                    <h1>Imperial Star Destroyer</h1>
-                    <p>Type: Battleship</p>
-                    <p>Mass: 40 million tons</p>
-                    <p>Length: 1600m</p>
-                </div>
-            </div>
-
-            <!-- Star Destroyer #3 -->
-            <div class="starDestroyer3ContainerDiv">
-                <div class="starDestroyer3Div">
-                    <img class="starDestroyer3Img" src="img/stardestroyer2.png" alt="A Star Destroyer">
-                </div>
-                <!-- Star Destroyer #3 Pop-up -->
-                <div class="starDestroyer3PopUpDiv destroyerPopUpDiv popUp">
-                    <h1>Imperial Star Destroyer</h1>
-                    <p>Type: Battleship</p>
-                    <p>Mass: 40 million tons</p>
-                    <p>Length: 1600m</p>
-                </div>
-            </div>
-
-            <!-- Star Destroyer #4 -->
-            <div class="starDestroyer4ContainerDiv">
-                <div class="starDestroyer4Div">
-                    <img class="starDestroyer4Img" src="img/stardestroyer2.png" alt="A Star Destroyer">
-                </div>
-                <!-- Star Destroyer #4 Pop-up -->
-                <div class="starDestroyer4PopUpDiv destroyerPopUpDiv popUp">
-                    <h1>Imperial Star Destroyer</h1>
-                    <p>Type: Battleship</p>
-                    <p>Mass: 40 million tons</p>
-                    <p>Length: 1600m</p>
-                </div>
-            </div>
-
-            <!-- Tie Fighter Group 1 -->
-            <div class="tieGroupDiv1">
-                <div class="tieDiv tieGroupDiv1Top">
-                    <img class="tie1Img" src="img/tiefighter.png" alt="A Tie Fighter">
-                </div>
-                <div class="tieDiv tieGroupDiv1Leader">
-                    <img class="tie1Img" src="img/tiefighter.png" alt="A Tie Fighter">
-                </div>
-                <div class="tieDiv tieGroupDiv1Bottom">
-                    <img class="tie1Img" src="img/tiefighter.png" alt="A Tie Fighter">
-                </div>
-                <!-- Tie Fighter Group 1 Pop-up -->
-                <div class="tieGroup1PopUpDiv tieGroupPopUp popUp">
-                    <h1>Tie Fighter Group</h1>
-                    <p>Composition: 3-5 starfighters</p>
-                    <p>Higher unit: Squadron</p>
-                </div>
-            </div>
-
-            <!-- Asteroid #1 -->
-            <div class="asteroid1ContainerDiv">
-                <div class="asteroid1Div">
-                    <img class="asteroid1Img" src="img/asteroid.png" alt="An asteroid">
-                </div>
-                <!-- Asteroid #1 Pop-up -->
-                <div class="asteroid1PopUpDiv asteroidPopUp popUp">
-                    <h1>Asteroid</h1>
-                    <p><i>A rock floating in space...</i></p>
-                </div>
-            </div>
-
-            <!-- Asteroid #2 -->
-            <div class="asteroid2ContainerDiv">
-                <div class="asteroid2Div">
-                    <img class="asteroid2Img" src="img/asteroid.png" alt="An asteroid">
-                </div>
-                <!-- Asteroid #2 Pop-up -->
-                <div class="asteroid2PopUpDiv asteroidPopUp popUp">
-                    <h1>Asteroid</h1>
-                    <p><i>That's no moon!</i></p>
-                </div>
-            </div>
-
-            <!-- Asteroid #3 -->
-            <div class="asteroid3ContainerDiv">
-                <div class="asteroid3Div">
-                    <img class="asteroid3Img" src="img/asteroid.png" alt="An asteroid">
-                </div>
-                <!-- Asteroid #3 Pop-up -->
-                <div class="asteroid3PopUpDiv asteroidPopUp popUp">
-                    <h1>Asteroid</h1>
-                    <p><i>Dinosaurs are <u>not</u> big fans...</i></p>
-                </div>
-            </div>
-
-            <!-- Superlaser -->
-            <div class="superlaserContainerDiv">
-                <div class="superLaserBeam1ContainerDiv superLaserSmallBeamContainer">
-                    <div class="superLaserBeam1Div superLaserSmallBeam"></div>
-                </div>
-                <div class="superLaserBeam2ContainerDiv superLaserSmallBeamContainer">
-                    <div class="superLaserBeam2Div superLaserSmallBeam"></div>
-                </div>
-                <div class="superLaserBeam3ContainerDiv superLaserSmallBeamContainer">
-                    <div class="superLaserBeam3Div superLaserSmallBeam"></div>
-                </div>
-                <div class="superLaserBeam4ContainerDiv superLaserSmallBeamContainer">
-                    <div class="superLaserBeam4Div superLaserSmallBeam"></div>
-                </div>
-                <div class="superLaserBeam5ContainerDiv superLaserSmallBeamContainer">
-                    <div class="superLaserBeam5Div superLaserSmallBeam"></div>
-                </div>
-                <div class="superLaserBeam6ContainerDiv superLaserSmallBeamContainer">
-                    <div class="superLaserBeam6Div superLaserSmallBeam"></div>
-                </div>
-                <div class="superLaserBigBeamContainerDiv">
-                    <div class="superLaserBigBeamDiv"></div>
-                </div>
-            </div>
-
+            </section>
+        </div>
+        <div class="footer">
+            <p>2025 © Nopryl of Norway</p>
         </div>
     </div>
+    <script src="js/index.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+          'wrapAround': true,
+          'fadeDuration': 400,
+          'imageFadeDuration': 400,
+          'resizeDuration': 500
+        })
+    </script>
 </body>
 </html>
