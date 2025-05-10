@@ -127,15 +127,9 @@ section {
     margin: 0;
     width: 100%;
 }
-/*
-.section-divider {
-    height: 0.5rem;
-    width: 100%;
-    background-color: var(--alt-background-color);
-}
- */
+
 #mainSectionDiv {
-    margin: 11rem 0 0 0;
+    margin: 8rem 0 0 0;
 }
 
 #mainSectionTextBox {
