@@ -201,7 +201,7 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 75.5rem;
+    height: 100vh;
 }
 
 #about {
@@ -231,4 +231,11 @@ section {
     color: var(--main-font-color-b);
     border-top: 0.5rem solid var(--alt-background-color);
     box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    #mainSectionDiv {
+        margin: 4rem 0 0 0;
+    }
 }
