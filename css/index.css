@@ -191,11 +191,6 @@ section {
     font-size: 1.15rem;
     color: var(--main-font-color-a);
 }
-.r-section-subtext {
-    font-size: 1.15rem;
-    font-style: italic;
-    color: var(--main-font-color-a);
-}
 
 #home {
     background-size: cover;
@@ -217,14 +212,7 @@ section {
     border-top: 0.5rem solid var(--alt-background-color);
     box-sizing: border-box;
 }
-/*
-#reviews {
-    display: flex;
-    background-color: var(--main-background-color);
-    border-top: 0.5rem solid var(--alt-background-color);
-    box-sizing: border-box;
-}
- */
+
 .footer {
     grid-area: f;
     background-color: var(--main-background-color);
